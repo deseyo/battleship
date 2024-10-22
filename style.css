@@ -1,0 +1,127 @@
+:root {
+  --main-font: "VT323", monospace;
+
+  font-family: var(--main-font);
+}
+
+body {
+  margin: 0;
+}
+
+.webpage-container {
+  height: 100vh; 
+  margin: 0 8%;
+  border: 4px groove rgb(211, 211, 211);
+  background-color: rgb(184, 184, 184);
+}
+
+.row {
+  display: flex;
+  width: max-content;
+  background-color: rgb(137, 137, 137);
+}
+
+.field {
+  width: 30px;
+  height: 30px;
+  border: 0.8px solid black;
+  transition: .5s ease;
+}
+
+.gameboards-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.orientation-container {
+  display: flex;
+  justify-content: center;
+}
+
+#orientation-select {
+  width: max-content;
+  height: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-family:  var(--main-font);
+  border: 5px groove rgb(211, 211, 211);
+  background-color: rgb(184, 184, 184);
+  transition: .3s ease;
+  
+}
+
+#orientation-select:hover { 
+  transform: scale(1.1);
+  transition: .3s ease;
+}
+
+#orientation-select:focus { 
+  outline: none;
+}
+
+.player-gameboard,
+.computer-gameboard {
+  border: 6px groove rgb(211, 211, 211);
+}
+
+.status-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.status {
+  height: 30px;
+  width: 700px;
+  padding: 10px 12px;
+  font-size: 28px;
+  border: 6px groove rgb(211, 211, 211);
+}
+
+.gameboard-name {
+  font-size: 23px;
+  margin-bottom: 6px;
+}
+
+.rule {
+  margin: 10px 0 30px 0;
+  text-align: center;
+  font-size: 21px;
+}
+
+.hit-ship {
+  background: url(./images/fire.gif);
+  background-size: cover;
+}
+
+.missed-field {
+  transition: .5s ease;
+  background-color: rgb(212, 212, 212);
+}
+
+.placed-ship {
+  transition: .5s ease;
+  background-color: rgb(132, 195, 177);
+}
+
+.restart-container {
+  display: flex;
+  justify-content: center;
+}
+
+#restart-btn {
+  font-size: 16px;
+  font-family: inherit;
+  border: 5px groove rgb(211, 211, 211);
+  background-color: rgb(184, 184, 184);
+  transition: .3s ease;
+}
+
+#restart-btn:hover {
+  transform: scale(1.1);
+  transition: .3s ease;
+}
