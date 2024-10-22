@@ -4,9 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Battleship</title>
-  <script src="./src/components/index.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./index.js" defer></script>
 </head>
 <body>
-  
+  <div class="webpage-container">
+    <div class="rule">Fill your gameboard with all ships to attack enemy's gameboard</div>
+    <div class="gameboards-container">
+      <div>
+        <div class="gameboard-name">Player Gameboard</div>
+        <div class="player-gameboard"></div>
+      </div>
+      <div>
+        <div class="gameboard-name">Computer Gameboard</div>
+        <div class="computer-gameboard"></div>
+      </div>
+    </div>
+    <div class="status-container">
+      <div class="status"></div>
+    </div>
+    <div class="orientation-container">
+      <select name="orientation" id="orientation-select">
+        <option value="horizontally">Horizontally</option>
+        <option value="vertically">Vertically</option>
+      </select>
+    </div>
+    <div class="restart-container">
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
 </body>
 </html>
